@@ -1,0 +1,23 @@
+{
+    "name": "strever/demo-app",
+    "description": "demo",
+    "type": "project",
+    "homepage": "https://strever.cn",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "strever",
+            "email": "strever@qq.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "elasticsearch/elasticsearch": "^7.2"
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    }
+}

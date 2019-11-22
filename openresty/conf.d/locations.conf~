@@ -1,0 +1,36 @@
+server {
+
+    listen 443;
+    server_name 127.0.0.1;
+
+    gzip on;
+    gzip_min_length 0;
+    gzip_types image/png;
+
+
+    location = / {
+       echo "规则A";
+    }
+    location = /login {
+       echo "规则B";
+    }
+    location ^~ /static/ {
+       echo "规则C";
+    }
+    location ^~ /static/files {
+        echo "规则X";
+    }
+
+    location ~* \.png$ {
+       echo "规则E";
+    }
+    location ~ \.(gif|jpg|png|js|css)$ {
+           echo "规则D";
+        }
+    location /img {
+        echo "规则Y";
+    }
+    location / {
+       echo "规则F";
+    }
+}
