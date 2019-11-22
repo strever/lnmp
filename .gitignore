@@ -1,0 +1,14 @@
+.idea
+.DS_Store
+.env
+./mysql/data/*
+./redis/data/*
+./nginx/log/*
+./openresty/log/*
+./nginx/certs/*
+!./nginx/certs/gen_cert.sh
+./openresty/certs/*
+!./openresty/certs/gen_cert.sh
+./php/demo-app/vendor/*
+
+
