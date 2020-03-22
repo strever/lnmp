@@ -16,7 +16,7 @@ fi
 
 apt-get -y install build-essential make automake libtool autoconf wget git gcc libpcre3-dev libssl-dev zlib1g-dev
 
-cd /tmp && mkdir nginx-installer
+cd /tmp && mkdir -p nginx-installer
 cd nginx-installer
 
 exit_if_error() {

@@ -2,6 +2,7 @@
 
 echo '<pre>';
 
+var_dump($_SERVER);
 var_dump($_POST);
 
 var_dump(ini_get('memory_limit'));
